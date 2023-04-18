@@ -19,10 +19,10 @@ def main():
 
         tmr += 1
         x = tmr%1600
-        y = tmr%30
+        y = tmr%50
         screen.blit(bg_img, [-x, 0])
         screen.blit(bg_img, [1600-x, 0])
-        screen.blit(kk_imgs[y <= 15], [300, 200])
+        screen.blit(kk_imgs[y <= 25], [300, 200])
         print(x)
         print(y)
 
